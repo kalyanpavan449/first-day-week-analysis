@@ -41,11 +41,10 @@ The script expects the following CSV files in the same directory:
 1. Clone this repository:
    git clone https://github.com/your-username/first-day-week-analysis.git
    cd first-day-week-analysis
-
 2. Ensure the required CSV files are present in the project folder.
-
 3. Run the script:
    python analysis.py
+
 📊 Example Output
 - Preview of datasets
 - Count of countries grouped by first day
