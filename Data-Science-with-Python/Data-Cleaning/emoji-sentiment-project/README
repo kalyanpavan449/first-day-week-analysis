@@ -1,0 +1,115 @@
+
+ 📊 Emoji Sentiment Analysis
+
+ 🌟 Project Highlights
+- Cleaned and transformed a multilingual emoji sentiment dataset using pandas.  
+- Engineered new sentiment metrics and categorical flags for deeper emotional insights.  
+- Identified top‑performing emojis and visualized sentiment placement patterns.  
+- Documented the entire workflow with clear Markdown structure and professional comments.
+
+
+
+ 🧩 Project Overview
+
+Researchers examined 1.6 million tweets in 13 European languages, each labeled as positive (+1), negative (-1), or neutral (0).  
+Approximately 4% of these tweets contained emojis, offering insight into emotional expression through symbols.
+
+The dataset `emoji-sentiment.csv` includes:
+
+| Column | Description |
+|--|--|
+| `Occurrences [5...max]` | Number of times the emoji appears in the dataset |
+| `Position [0...1]` | Average position of the emoji in tweets (0 = start, 1 = end) |
+| `Neg [0...1]` | Percentage of tweets with the emoji that are negative |
+| `Neu [0...1]` | Percentage of tweets with the emoji that are neutral |
+| `Pos [0...1]` | Percentage of tweets with the emoji that are positive |
+
+
+
+ 🧹 Data Cleaning Steps
+
+1. Remove unnecessary columns such as Unicode metadata and confidence intervals.  
+2. Rename columns using `snake_case` for readability and consistency.  
+3. Standardize column names to make them Python‑friendly.  
+4. Compute sentiment score as `positive_percent - negative_percent`.  
+5. Add flags for positive emojis and categorize emoji positions.
+
+
+
+ 🧮 Key Analysis
+
+- Sentiment Distribution:  
+  Calculates the percentage of emojis with positive sentiment.
+
+- Top 20 Emojis:  
+  Identifies the most frequently used emojis and their sentiment polarity.
+
+- Most Positive & Negative Emojis:  
+  Filters emojis with more than 500 occurrences to find extremes of sentiment.
+
+- Position Analysis:  
+  Categorizes emojis by their placement (beginning or end of messages) and compares sentiment distribution.
+
+
+
+ 📈 Insights
+
+- Positive emojis dominate overall usage.  
+- Most emojis appear toward the end of messages, emphasizing emotional closure.  
+- The most popular emojis tend to express positive sentiment, reinforcing friendly or humorous tones.
+
+
+
+ 🧰 Technologies Used
+
+- Python 3.13+
+- pandas — Data manipulation and cleaning  
+- matplotlib — Visualization  
+- Jupyter Notebook / Visual Studio Code — Interactive analysis environment
+
+
+
+ 🚀 How to Run
+
+1. Clone the repository:
+   
+   git clone https://github.com/<your-username>/emoji-sentiment-analysis.git
+   
+2. Navigate to the project directory:
+   
+   cd emoji-sentiment-analysis
+   
+3. Install dependencies:
+   
+   pip install pandas matplotlib
+   
+4. Open the notebook in Visual Studio Code:
+   
+   code emoji-sentiment.ipynb
+   
+5. Run all cells to reproduce the analysis.
+
+
+
+ 📚 Future Improvements
+
+- Add visualizations (bar charts, heatmaps) for sentiment and position comparison.  
+- Integrate emoji sentiment trends over time or across languages.  
+- Build an interactive dashboard using Plotly or Streamlit.
+
+
+
+ 🧾 Author
+
+Pavan Kalyan — Data Analyst transitioning from accounting to data science.  
+Focused on clean documentation, reproducible analysis, and recruiter‑ready project presentation.
+
+
+
+ 🪄 License
+
+This project is released under the MIT License.  
+Feel free to use, modify, and share with attribution.
+
+
+
